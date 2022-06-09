@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h2>Const Hoisting ReferenceError</h2>
+
+    <p>With <b>const</b>, you cannot use a variable before it is declared:</p>
+    <p id="demo"></p>
+
+    <script>
+        try {
+            alert(carName);
+            const carName = "Volvo";
+        }
+        catch (err) {
+            document.getElementById("demo").innerHTML = err;
+        }
+    </script>
+
+
+</body>
+</html>
