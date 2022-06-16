@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h2>Object Indentic</h2>
+
+    <p>JavaScript objects cannot be compared:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        // x is an object
+        let x = new Number(500);
+
+        // y is an object
+        let y = new Number(500);
+
+        document.getElementById("demo").innerHTML = (x===y);
+    </script>
+
+</body>
+</html>

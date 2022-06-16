@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h2>Methode toFixed</h2>
+
+    <p>The toFixed() meethod rounds a number to a given number of digits.</p>
+    <p>For working with money, toFixed(2) is perfect.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let x = 9.656;
+        document.getElementById("demo").innerHTML =
+            x.toFixed(0) + "<br>" +
+            x.toFixed(2) + "<br>" +
+            x.toFixed(4) + "<br>" +
+            x.toFixed(6);
+    </script>
+
+</body>
+</html>
