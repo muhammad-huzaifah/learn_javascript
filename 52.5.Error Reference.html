@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h2>JavaScript Error</h2>
+
+    <p>You cannot use the value of a non-eexisting variable:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let x = 5;
+        try {
+            x = y + 1;
+        }
+        catch (err) {
+            document.getElementById("demo").innerHTML = err.name;
+        }
+    </script>
+
+</body>
+</html>
