@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create a BigInt</title>
+</head>
+<body>
+    <h1>JavaScript Numbers</h1>
+    <h2>Create a BigInt</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        let x = 1234567890123456789901234567890n;
+        let y = BigInt("1234567890123456789901234567890");
+        document.getElementById("demo").innerHTML = x + "<br>" + y;
+    </script>
+</body>
+</html>
