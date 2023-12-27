@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error Cause</title>
+</head>
+<body>
+    <h1>JavaScript Objects</h1>
+    <h2>The Object.hasOwn() Method</h2>
+    <p>Check if a property is the own property of an object:</p>
+    <p id="demo"></p>
+
+    <script>
+        try {
+            eval("alert('Hello')");
+        }
+        catch (err) {
+            document.getElementById("demo").innerHTML = err.name;
+        }
+    </script>
+</body>
+</html>

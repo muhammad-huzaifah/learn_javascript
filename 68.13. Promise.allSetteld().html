@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promise.allSetteld()</title>
+</head>
+<body>
+    <h1>JavaScript Promise Object</h1>
+    <h2>The Promise.allSettled() Method</h2>
+    <p id="demo"></p>
+
+    <script>
+        // Create a Promise
+        const myPromise1 = new Promise((resolve, reject) => {
+            setTimeout(resolve, 200, "King");
+        });
+
+        //Create another Promise
+        const myPromise2 = new Promise((resolve, reject) => {
+            setTimeout(resolve, 100, "Queen");
+        });
+
+        //Settle All
+        Promise.allSettled([myPromise1, myPromise2]).then((result) => result.forEach((x) => myDisplay(x.status)),
+        );
+
+        //Function to run when a Promise is settled:
+        function myDisplay(some) {
+            document.getElementById("demo").innerHTML += some;
+        }
+    </script>
+</body>
+</html>

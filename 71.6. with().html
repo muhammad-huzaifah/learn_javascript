@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>with()</title>
+</head>
+<body>
+    <h1>JavaScript Arrays</h1>
+    <h2>The with() Method</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        const months = ["Januar", "Februar", "Mar", "April"];
+        const new_month = months.with(2, "March");
+        document.getElementById("demo").innerHTML = new_month;
+    </script>
+</body>
+</html>
