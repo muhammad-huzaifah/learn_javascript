@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Create New</title>
+</head>
+<body>
+    <h2>JavaScript Objects</h2>
+    <p>Creating a JavaScript Object:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const person = new Object();
+        person.firstName = "John";
+        person.lastName = "Doe";
+        person.age = 50;
+        person.eyeColor = "Blue";
+
+        document.getElementById("demo").innerHTML =
+            person.firstName + " is " + person.age + " years old.";
+    </script>
+</body>
+</html>
