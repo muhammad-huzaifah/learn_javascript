@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Properties 5</title>
+</head>
+<body>
+    <h2>JavaScript Object Properties</h2>
+    <p>Deleting object properties.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const person = {
+            firsname: "John",
+            lastname: "Doe",
+            age: 50,
+            eyecolor: "blue"
+        };
+
+        delete person["age"];
+
+        document.getElementById("demo").innerHTML =
+            person.firsname + " is " +
+            person.age + " years old.";
+    </script>
+</body>
+</html>
